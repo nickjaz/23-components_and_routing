@@ -26,16 +26,19 @@ class NoteCreateForm extends React.Component {
 
   render() {
     return (
-      <form onsubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <input
           name='title'
           type='text'
+          placeholder='title'
           value={this.state.title}
           onChange={this.handleChange}
         />
         <input
+          className='note-content'
           name='content'
           type='text'
+          placeholder='enter note content here'
           value={this.state.content}
           onChange={this.handleChange}
         />

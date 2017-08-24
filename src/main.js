@@ -29,9 +29,11 @@ class App extends React.Component {
   render() {
     return (
       <main>
+        <h1>Note Maker</h1>
         <BrowserRouter>
           <section>
-            <Route exact path='/' component={() => <NoteContainer app={this.getApp()} />}
+            <Route exact path='/' component={() =>      <NoteContainer app={this.getApp()}  />
+            } />
           </section>
         </BrowserRouter>
       </main>
@@ -39,4 +41,4 @@ class App extends React.Component {
   }
 }
 
-React.Dom.render(<App />, document.getElementById('root'))
+ReactDom.render(<App />, document.getElementById('root'))

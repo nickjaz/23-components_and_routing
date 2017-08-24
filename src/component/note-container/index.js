@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import uuid from 'uuid/v1';
 
 import NoteCreateForm from '../note-create-form';
