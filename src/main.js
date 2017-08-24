@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import NoteContainer from './component/note-container';
+import NoteList from './component/note-list';
 
 class App extends React.Component {
   constructor(props) {
@@ -34,8 +35,10 @@ class App extends React.Component {
           <section>
             <Route exact path='/' component={() =>      <NoteContainer app={this.getApp()}  />
             } />
+            <NoteList notes={this.state.notes}/>
           </section>
         </BrowserRouter>
+
       </main>
     )
   }
